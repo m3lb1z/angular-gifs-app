@@ -52,7 +52,7 @@ export class GifsService {
       .get<SearchResponse>(`${GIFTS_API_URL}/search`, { params })
       .subscribe((resp) => {
         this.gifList = resp.data;
-        console.log(resp);
+        // console.log(resp);
       });
   }
 
